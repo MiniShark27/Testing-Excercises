@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest --testPathIgnorePatterns=Answers",
+    "test-answers": "jest Answers"
   },
   "author": "",
   "license": "ISC",

@@ -12,4 +12,5 @@ All students should be able to run Jest Tests, are able to write simple tests, a
 2. Run `npm install` in the Testing directory
 
 ### How to run the tests:
-1. Run `npm test` in the Testing directory
+1. Run `npm test` to run all the tests inside the activities
+2. Run `npm run test-answers` to run the tests in the Answers directory
