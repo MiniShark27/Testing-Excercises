@@ -10,6 +10,7 @@
  * A function that finds the root of a continuousFunction between two values
  * The root found is garmented to be between the two values, and to be at most epsilon away from the true root
  * For Example: If the root is 2 and epsilon is 0.1, then the root will be between 1.9 and 2.1
+ * Note: This function will only work if f(a) and f(b) have different signs (unless either is 0)
  * A root is where a continuousFunction has a value of 0
  *
  * @param {continuousFunction} f the function where the root will be found
