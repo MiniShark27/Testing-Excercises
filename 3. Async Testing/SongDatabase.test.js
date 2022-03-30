@@ -1,6 +1,6 @@
 // Test Song Database
 
-const Connect = require("./SongDatabasePrivate").Connect;
+const songDatabase = require("./SongDatabasePrivate");
 const {
   addSongs,
   changeArtistName,
