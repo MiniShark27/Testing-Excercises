@@ -20,3 +20,14 @@ describe("Test Methods Built On The Song Database", () => {
     expect(true).toBe(true);
   });
 });
+
+/*
+  Exercise 3 (Do Above):
+    Brainstorm and write tests that test the methods in SongDatabaseHelpers.js
+      Note: The methods go from simple to more complex, and don't worry if not all the methods get tested
+    These Methods are asynchronous, so you will need to use async/await to test them
+    Should connect to the database before running each test
+    Remember to run `npm test` to verify they pass
+
+    P.S. You can assume the methods in SongDatabase.js are working correctly (and that they don't need to be tested)
+*/
