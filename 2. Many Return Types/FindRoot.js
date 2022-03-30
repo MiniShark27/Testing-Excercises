@@ -23,6 +23,7 @@ function findRoot(f, a, b, epsilon) {
     throw new Error("f must be a function");
   }
   if (f(a) * f(b) > 0) {
+    // Unable to find a root with this method
     return { root: undefined, iterations: 0 };
   }
   let c = a;
