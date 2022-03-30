@@ -45,12 +45,12 @@ function findRoot(f, a, b, epsilon) {
 }
 
 // Demonstration of how the findRoot function works
-// The function below has Roots at +/- sqrt(2)
-const f = x => x * x - 2;
+// The function below has Roots at +/- 1
+const f = x => x * x - 1;
 
 const root1 = findRoot(f, 0, 10, 0.00001);
 const root2 = findRoot(f, -10, 0, 0.00001);
 // Uncomment Below Line to see output
-// console.log(root1, root2);
+console.log(root1, root2);
 
 module.exports = { findRoot };
