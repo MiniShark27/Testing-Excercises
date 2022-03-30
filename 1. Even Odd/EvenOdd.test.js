@@ -1,7 +1,7 @@
 /*
   File to test the isEven and isOdd functions
   Below is a completed test suite for the isEven function
-  After that is the first excercist (making a test suite for the isOdd function)
+  After that is the first exercise (making a test suite for the isOdd function)
 */
 
 // Example Test Suite for IsEven:
@@ -24,7 +24,7 @@ describe("isEven", function () {
 });
 
 /*
-  Excercise 1 (Do Below): 
+  Exercise 1 (Do Below): 
     Write 2 tests for isOdd()
     Put those tests in new a describe block
     Run `npm test` to run the tests and verify they pass

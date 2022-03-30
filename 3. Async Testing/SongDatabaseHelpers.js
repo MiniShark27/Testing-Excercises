@@ -2,7 +2,7 @@ const songDatabase = require("./SongDatabase");
 
 // Note: These methods go from simple to more complex to test
 // This part will be the remainder of the period, and does not need to be completed
-// Try to test the following methods as thouroughly as possible
+// Try to test the following methods as thoroughly as possible
 
 // Finds the longest song in the database
 // If no songs are found, returns null
