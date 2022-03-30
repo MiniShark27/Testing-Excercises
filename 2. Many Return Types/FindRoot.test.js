@@ -19,7 +19,7 @@ describe("findRoot Testing", () => {
 });
 
 /*
-  Exercise 2 (Do Below):
+  Exercise 2 (Do Above):
     Brainstorm the different cases that could be tested (should be at least 3)
       Try to use a different function than the one in FindRoot.js
     Write a test for each case in the above describe block
