@@ -3,7 +3,7 @@ const { test, expect } = require("@jest/globals");
 const findRoot = require("./Complex").findRoot;
 
 /*
-  This part of the excercise is to create tests using different Jest Matchers
+  This part of the exercise is to create tests using different Jest Matchers
   Documentation: https://jestjs.io/docs/using-matchers
 
   Probably use the following: (though there are many other ways to test it)
@@ -21,7 +21,7 @@ describe("findRoot Testing", () => {
 });
 
 /*
-  Excercise 2 (Do Below):
+  Exercise 2 (Do Below):
     Brainstorm the different cases that could be tested (should be at least 3)
       Try to use a different function than the one in Complex.js
     Write a test for each case in the above describe block

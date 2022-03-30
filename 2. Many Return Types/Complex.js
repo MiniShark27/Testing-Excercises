@@ -1,18 +1,18 @@
 /**
  * A two dimensional function that takes in one value as an input, and returns an output
  *
- * @callback continousFunction
+ * @callback continuousFunction
  * @param {number} input the input to the function
  * @returns {number} the output of the function
  */
 
 /**
- * A function that finds the root of a continousFunction between two values
- * The root found is garenteed to be between the two values, and to be at most epislon away from the true root
+ * A function that finds the root of a continuousFunction between two values
+ * The root found is garmented to be between the two values, and to be at most epsilon away from the true root
  * For Example: If the root is 2 and epsilon is 0.1, then the root will be between 1.9 and 2.1
- * A root is where a continousFunction has a value of 0
+ * A root is where a continuousFunction has a value of 0
  *
- * @param {continousFunction} f the function where the root will be found
+ * @param {continuousFunction} f the function where the root will be found
  * @param {number} a the lower bound of the root
  * @param {number} b the upper bound of the root
  * @param {number} epsilon the precision of the root
