@@ -1,12 +1,12 @@
 // Test Song Database
 
-const songDatabase = require("./SongDatabasePrivate");
+const songDatabase = require("./SongDatabase");
 const {
   addSongs,
   changeArtistName,
   getLongestSong,
   splitLongSongs,
-} = require("./SongDatabase");
+} = require("./SongDatabaseHelpers");
 
 describe("Test Methods Built On The Song Database", () => {
   // NOTE: Make sure you connect to the database before running these tests

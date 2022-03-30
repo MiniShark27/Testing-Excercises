@@ -3,8 +3,8 @@ const {
   changeArtistName,
   getLongestSong,
   splitLongSongs,
-} = require("./SongDatabase");
-const songDatabase = require("./SongDatabasePrivate");
+} = require("./SongDatabaseHelpers");
+const songDatabase = require("./SongDatabase");
 
 function Demonstrations() {
   // Uncomment one of the demonstration functions below, then run the file to see the demo
@@ -12,7 +12,7 @@ function Demonstrations() {
   // DemonstrateChangeArtistName();
   // DemonstrateAddSongs();
   // DemonstrateSplitLongSongs();
-  // DemonstratePrivateMethods();
+  // DemonstrateSongDBMethods();
 }
 Demonstrations();
 
@@ -69,8 +69,8 @@ async function DemonstrateSplitLongSongs() {
   console.log(await songDatabase.SelectWhere(song => true));
 }
 
-// Demonstrates how the methods in SongDatabasePrivate.js work
-async function DemonstratePrivateMethods() {
+// Demonstrates how the methods in SongDatabase.js work
+async function DemonstrateSongDBMethods() {
   await Connect();
   await Insert("Song1", "Artist1", 2.25);
   await Insert("Song2", "Artist2", 2.75);
