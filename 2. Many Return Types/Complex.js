@@ -48,6 +48,7 @@ const f = x => x * x - 2;
 
 const root1 = findRoot(f, 0, 10, 0.00001);
 const root2 = findRoot(f, -10, 0, 0.00001);
-console.log(root1, root2);
+// Uncomment Below Line to see output
+// console.log(root1, root2);
 
 module.exports = { findRoot };
