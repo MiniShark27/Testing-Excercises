@@ -7,7 +7,7 @@ const songDatabase = require("./SongDatabase");
 // Finds the longest song in the database
 // If no songs are found, returns null
 async function getLongestSong() {
-  const songs = await songDatabase.SelectWhere(song => song.length > 5);
+  const songs = await songDatabase.SelectWhere(song => true);
   return songs.reduce((a, b) => (a.length > b.length ? a : b));
 }
 
@@ -23,7 +23,7 @@ async function changeArtistName(artist, newArtist) {
 // Add all the songs in the list songs to the database
 // If any can't be added, none are added, and false is returned
 // If all are added, true is returned
-// Song list is in the format: [{name: "", artist: "", length: ""}, ...]
+// Song list is in the format: [{name: "", artist: "", length: }, ...]
 async function addSongs(songs) {
   const names = songs.map(song => song.name);
   const existingSongs = await songDatabase.SelectWhere(song =>
