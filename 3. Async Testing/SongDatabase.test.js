@@ -16,4 +16,7 @@ describe("Test Methods Built On The Song Database", () => {
   // ALSO NOTE: The methods start out simple (see addSongs) but get more complicated,
   //            go at your own pace (or your group's pace) and don't worry if not all the methods get tested
   //            The goal is to practice writing and thinking about tests, so feel free to ask for help
+  test("Empty Test (here as placeholder)", () => {
+    expect(true).toBe(true);
+  });
 });
