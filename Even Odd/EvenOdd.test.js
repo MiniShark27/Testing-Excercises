@@ -4,14 +4,16 @@
   After that is the first excercist (making a test suite for the isOdd function)
 */
 
+// Example Test Suite for IsEven:
+
 // Remember to import the function you are testing
-let isEven = require("./EvenOdd.js").isEven;
+const isEven = require("./EvenOdd.js").isEven;
 
 // describe() is used to label a group of tests
 describe("isEven", function () {
   // Use the test() function to define a test
   test("should return true if an even number is passed", function () {
-    // To verify that the function returns true, we use assert.equal()
+    // To verify that the function returns true, use expect().toBe()
     expect(isEven(2)).toBe(true);
   });
 
@@ -22,11 +24,8 @@ describe("isEven", function () {
 });
 
 /*
-  Excercise 1: 
+  Excercise 1 (Do Below): 
     Write 2 tests for isOdd()
-    Put those tests in a describe block
+    Put those tests in new a describe block
+    Run `npm test` to run the tests and verify they pass
 */
-
-//CODE START
-
-//CODE END
