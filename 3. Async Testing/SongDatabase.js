@@ -7,6 +7,7 @@ function addSimulatedDelay(delay = 100) {
 }
 
 // Connects to the Db
+// Calling this on an already connected Db will reset it
 async function Connect() {
   await addSimulatedDelay();
   songDatabase = {

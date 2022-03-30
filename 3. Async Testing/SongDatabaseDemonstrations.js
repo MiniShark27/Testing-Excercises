@@ -8,16 +8,18 @@ const songDatabase = require("./SongDatabase");
 
 function Demonstrations() {
   // Uncomment one of the demonstration functions below, then run the file to see the demo
-  // DemonstrateGetLongestSong();
-  // DemonstrateChangeArtistName();
-  // DemonstrateAddSongs();
-  // DemonstrateSplitLongSongs();
-  // DemonstrateSongDBMethods();
+  DemonstrateGetLongestSong();
+  DemonstrateChangeArtistName();
+  DemonstrateAddSongs();
+  DemonstrateSplitLongSongs();
+  DemonstrateSongDBMethods();
 }
 Demonstrations();
 
 // Demonstrates how the getLongestSong function is called and its standard output
 async function DemonstrateGetLongestSong() {
+  console.log("Running Demonstration of getLongestSong");
+
   await songDatabase.Connect();
   await songDatabase.Insert("song1", "artist1", 6);
   await songDatabase.Insert("song2", "artist1", 4);
@@ -30,6 +32,8 @@ async function DemonstrateGetLongestSong() {
 
 // Demonstrates how the changeArtistName function is called and its standard output
 async function DemonstrateChangeArtistName() {
+  console.log("Running Demonstration of changeArtistName");
+
   await songDatabase.Connect();
   await songDatabase.Insert("song1", "artist1", 6);
   await songDatabase.Insert("song2", "artist1", 4);
@@ -43,6 +47,8 @@ async function DemonstrateChangeArtistName() {
 
 // Demonstrates how the addSongs function is called and its standard output
 async function DemonstrateAddSongs() {
+  console.log("Running Demonstration of addSongs");
+
   await songDatabase.Connect();
   const songs = [
     { name: "song1", artist: "artist1", length: 6 },
@@ -58,6 +64,8 @@ async function DemonstrateAddSongs() {
 
 // Demonstrates how the splitLongSongs is called and its standard output
 async function DemonstrateSplitLongSongs() {
+  console.log("Running Demonstration of splitLongSongs");
+
   await songDatabase.Connect();
   await songDatabase.Insert("song1", "artist1", 6);
   await songDatabase.Insert("song2", "artist1", 4);
@@ -71,14 +79,16 @@ async function DemonstrateSplitLongSongs() {
 
 // Demonstrates how the methods in SongDatabase.js work
 async function DemonstrateSongDBMethods() {
-  await Connect();
-  await Insert("Song1", "Artist1", 2.25);
-  await Insert("Song2", "Artist2", 2.75);
-  await Insert("Song3", "Artist3", 3.14);
-  await Insert("Song4", "Artist4", 2.78);
-  await Insert("Song5", "Artist5", 3.25);
-  await Update("Song1", "Song1", "Artist1", 3);
-  await Delete("Song2");
+  console.log("Running Demonstration of SongDBMethods");
 
-  console.log(await SelectWhere(song => song.length >= 3));
+  await songDatabase.Connect();
+  await songDatabase.Insert("Song1", "Artist1", 2.25);
+  await songDatabase.Insert("Song2", "Artist2", 2.75);
+  await songDatabase.Insert("Song3", "Artist3", 3.14);
+  await songDatabase.Insert("Song4", "Artist4", 2.78);
+  await songDatabase.Insert("Song5", "Artist5", 3.25);
+  await songDatabase.Update("Song1", "Song1", "Artist1", 3);
+  await songDatabase.Delete("Song2");
+
+  console.log(await songDatabase.SelectWhere(song => song.length >= 3));
 }
