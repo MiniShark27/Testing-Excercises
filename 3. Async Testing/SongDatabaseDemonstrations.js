@@ -8,11 +8,11 @@ const songDatabase = require("./SongDatabasePrivate");
 
 function Demonstrations() {
   // Uncomment one of the demonstration functions below, then run the file to see the demo
-  DemonstrateGetLongestSong();
-  DemonstrateChangeArtistName();
-  DemonstrateAddSongs();
-  DemonstrateSplitLongSongs();
-  DemonstratePrivateMethods();
+  // DemonstrateGetLongestSong();
+  // DemonstrateChangeArtistName();
+  // DemonstrateAddSongs();
+  // DemonstrateSplitLongSongs();
+  // DemonstratePrivateMethods();
 }
 Demonstrations();
 
