@@ -6,13 +6,13 @@ const {
 } = require("./SongDatabaseHelpers");
 const songDatabase = require("./SongDatabase");
 
-function Demonstrations() {
+async function Demonstrations() {
   // Uncomment one of the demonstration functions below, then run the file to see the demo
-  DemonstrateGetLongestSong();
-  DemonstrateChangeArtistName();
-  DemonstrateAddSongs();
-  DemonstrateSplitLongSongs();
-  DemonstrateSongDBMethods();
+  // await DemonstrateGetLongestSong();
+  // await DemonstrateChangeArtistName();
+  // await DemonstrateAddSongs();
+  // await DemonstrateSplitLongSongs();
+  // await DemonstrateSongDBMethods();
 }
 Demonstrations();
 
